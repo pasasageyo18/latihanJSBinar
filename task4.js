@@ -60,10 +60,12 @@ m tall
 */
 function calcBMI(mass, height) {
   let BMI = mass / (height * height);
-  console.log(BMI);
+  return BMI;
 }
 let StevenBMI = calcBMI(78, 1.69);
+console.log(StevenBMI);
 let BillBMI = calcBMI(92, 1.95);
+console.log(BillBMI);
 
 /* #6 Menghitung BMI dengan if else statement
 - John weights 95 kg and is 1.88 m tall. Nash weights 85 kg and is 1.76 
@@ -75,9 +77,9 @@ John's BMI (28.3) is higher than Nash's (23.5)
 let JohnBMI = calcBMI(95, 1.88);
 let NashBMI = calcBMI(85, 1.76);
 if (JohnBMI > NashBMI) {
-  console.log(`John's BMI (26.8) is higher than Nash's (27.4)`);
+  console.log(`John's BMI (${JohnBMI}) is higher than Nash's (${NashBMI})`);
 } else {
-  console.log(`Nash's (27.4) is higher than John's BMI (26.8)`);
+  console.log(`Nash's (${NashBMI}) is higher than John's BMI (${JohnBMI})`);
 }
 //  #7 Looping
 
